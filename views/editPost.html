@@ -1,0 +1,14 @@
+<div class="simpleBox" id="simple-horizontal-form">
+	<h1>Edit A Qoute</h1>
+	<form class="form-group"> 
+	    <textarea class="form-control" type="text" name="body" placeholder="Qoute" ng-model="commentBody"> </textarea>
+	    <br>
+	    <div class="form-inline">
+	        <input class="form-control" id="commentAuthorEdit" type="text" name="username" placeholder="Author" ng-model="commentAuthor">
+	    <span class="rightAbsBtn">
+			<button class="btn btn-default" type="submit" ng-click="saveEdit()"> Save </button>
+	    	<button class="btn btn-default" type="submit" ng-click="cancelEdit()"> Cancel </button>
+	    </span>
+	    </div>
+	</form>
+</div>

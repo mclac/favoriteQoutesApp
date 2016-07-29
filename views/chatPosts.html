@@ -1,0 +1,26 @@
+<div class="simpleBox" id="simple-horizontal-form">
+    <h1>Add Your Favorite Qoute!</h1>
+    <form class="form-group"> 
+        <textarea class="form-control" type="text" name="body" placeholder="Qoute" ng-model="commentBody"> </textarea>
+        <br>
+        <div class="form-inline">
+            <input class="form-control" id="commentAuthor" type="text" name="author" placeholder="Author" ng-model="commentAuthor">
+        <span class="rightAbsBtn">
+            <button class="btn btn-default" type="submit" ng-click="postComment()"> Submit </button>
+        </span>
+        </div>
+    </form>
+</div>
+<ul class="list-group" id="listOfQoutes">
+    <li class="list-group-item" ng-repeat="post in posts | orderBy:'-date'" ng-model="post" ng-mouseenter="options=true" ng-mouseleave="options=false">
+        <blockquote>
+            <p>{{post.body}}</p>
+            <footer>{{post.author}}</footer>
+            <span class="rightAbsBtn">
+                <button class="btn btn-default" ng-show="options" ng-hide="!options" type="submit" ng-click="edit(post)">Edit</button>
+                <button class="btn btn-default" ng-show="options" ng-hide="!options" type="submit" ng-click="delete(post)">Delete</button>
+            </span>
+        </blockquote>
+        
+    </li>
+</ul>
