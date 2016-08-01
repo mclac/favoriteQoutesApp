@@ -1,6 +1,6 @@
 var mongoose = require("mongoose")
 //connect to db
-mongoose.connect("mongodb://localhost/qoutes")
+mongoose.connect(process.env.MONGODB_URI)
 
 var db = mongoose.connection 
 db.on("error", console.error.bind(console, "connection error:"))
