@@ -1,3 +1,3 @@
-# My Node Favorite Qoute's App
+# My Node Favorite Qoutes App
 
 So this is a simple Node.JS app with a RESTful API using the MEAN stack. The front end is mostly all Bootstrap. Actually I was inspired by Bootstraps quotation style and built the app around it. I did end up tweaking the default Bootstrap CSS a bit to give it a bit more flavor. Since it's just a simple demo its not as robust as a production app e.g. there isn't much error handling. Check out the live demo here at this link https://infinite-lake-78886.herokuapp.com/#/ . I'm working on a more complicated chatApp at that will be far more robust with user logins, web-socket utilization, proper testing and error handling. Anyway thanks for checking this out. Also feel free to fork or use this as a base for any app though it's geared more towards chat/communications apps.
